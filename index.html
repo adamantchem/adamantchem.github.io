@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- jQuery JS -->
+<script src="js/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Animate JS -->
+<script src="vendors/animate/wow.min.js"></script>
+<!-- Camera Slider -->
+<script src="vendors/camera-slider/jquery.easing.1.3.js"></script>
+<script src="vendors/camera-slider/camera.min.js"></script>
+<!-- Isotope JS -->
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope.pkgd.min.js"></script>
+<!-- Progress JS -->
+<script src="vendors/Counter-Up/jquery.counterup.min.js"></script>
+<script src="vendors/Counter-Up/waypoints.min.js"></script>
+<!-- Owlcarousel JS -->
+<script src="vendors/owl_carousel/owl.carousel.min.js"></script>
+<!-- Stellar JS -->
+<script src="vendors/stellar/jquery.stellar.js"></script>
+<!-- Theme JS -->
+<script src="js/theme.js"></script>
+<script>
+    $(function() {
+        $("#blog").load("blog.html");
+        $("#footer").load("footer.html");
+        $("#feature").load("feature.html");
+        $("#achievements").load("achievements.html");
+        $("#aboutus").load("aboutus.html");
+    });
+</script>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-    <title>Adamant Inspection Services</title>
+    <title>Topbuilder Construction Template</title>
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
@@ -29,11 +60,13 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
     <!-- Preloader -->
     <div class="preloader"></div>
+
 
     <!-- Top Header_Area -->
     <section class="top_header_area">
@@ -55,6 +88,7 @@
     </section>
     <!-- End Top Header_Area -->
 
+
     <!-- Header_Area -->
     <nav class="navbar navbar-default header_aera" id="main_navbar">
         <div class="container">
@@ -73,11 +107,11 @@
             <div class="col-md-2 p0">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
                     <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt=""></a><br><br>
                 </div>
             </div>
@@ -90,10 +124,10 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="dropdown submenu">
-                            <a href="about-2.html">About Us</a>
+                            <a href="#about">About Us</a>
                         </li>
                         <li class="dropdown submenu">
-                            <a href="services.html">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li><a href="#">Gallery</a></li>
 
@@ -107,6 +141,7 @@
         <!-- /.container -->
     </nav>
     <!-- End Header_Area -->
+
 
     <!-- Slider area -->
     <section class="slider_area row m0">
@@ -146,22 +181,25 @@
                 <div class="col-md-3 col-sm-6 builder">
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <h4>Professional Services</h4>
-                    <p>Experts to help you with quality inspection, sourcing and consultancy at best price. </p>
+                    <p><strong>Experts</strong> to help you with quality inspection, sourcing and consultancy at best price. </p>
                 </div>
                 <div class="col-md-3 col-sm-6 builder">
                     <i class="fa fa-building" aria-hidden="true"></i>
                     <h4>We Deliver Quality</h4>
-                    <p>Our professional inspection service guarantees to deliver best products ensuring satisfaction.</p>
+                    <p>Our professional inspection service <strong>guarantees</strong> to deliver best products ensuring satisfaction.</strong>
+                    </p>
                 </div>
                 <div class="col-md-3 col-sm-6 builder">
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
                     <h4>Always On Time</h4>
-                    <p>We provide details at each phase of product development to make sure you are aware throughout the development process.</p>
+                    <p>
+                        We provide details at <strong> each phase </strong>of product development to make sure you are aware throughout the development process.
+                    </p>
                 </div>
                 <div class="col-md-3 col-sm-6 builder">
                     <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                     <h4>We Are Pasionate</h4>
-                    <p>We Love Leather as much as you do! We know what it takes to deliver best products. </p>
+                    <p>We Love <strong>Leather </strong> as much as you do! We know what it takes to deliver best products. </p>
                 </div>
             </div>
         </div>
@@ -169,36 +207,73 @@
     <!-- End Professional Builde -->
 
     <!-- About Us Area -->
-    <section class="about_us_area row">
+    <a id="about"></a>
+    <section class="about_us_area about_us_2 row">
+
         <div class="container">
             <div class="tittle wow fadeInUp">
                 <h2>ABOUT US</h2>
-                <h4>Adamant Inspection services is a premier Quality control inspection agency for Leather and Leather goods based in India. Presently catering our wide range of services as sourcing and inspection agency for buyers importing Leather or Leather
-                    goods from Inida. </h4>
+                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
             </div>
             <div class="row about_row">
-                <div class="who_we_area col-md-7 col-sm-6">
+                <div class="who_we_area col-md-7">
                     <div class="subtittle">
                         <h2>WHO WE ARE</h2>
                     </div>
-                    <p>
-                        <Strong> Quality Assurance | Inspection | Sourcing | Leather consultancy </strong><br><br> Our team of Leather Technologists have wide range of experience in Leather industry as well as good understanding of the overseas market which makes sure that our selection meet the demands of the customers and they get
-                        what they pay for. Our selection and <strong>inspection</strong> policy takes care of the production at each step thereby ensuring proper <strong>quality check</strong> and control on products. We effectively coordinate between
-                        the importer and production unit by regularly interacting and keeping them informed about the latest situations.<br><br> We also help in sourcing finished leather and leather goods for buyers overseas, making best quality available
-                        at least price.<br><br> Products that we deal in include footwear, Leather bags, Leather Jacket, Saddlery, Leather Belts, Traveler Bags, Leather Gloves, Leather Apron etc. as well as finished leather both din and non-din , crazy
-                        horse, upholstery , upper etc.
-                    </p>
-                    <a href="contact.html" class="button_all">Contact Now</a>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                        of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    <a href="#" class="button_all">Contact Now</a>
                 </div>
-                <div class="col-md-5 col-sm-6 about_client">
-                    <img src="images/about_client.jpg" alt="">
+                <div class="col-md-5 our_skill_inner">
+                    <div class="single_skill">
+                        <h3>Architecture</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress_parcent"><span class="counter2">89</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_skill">
+                        <h3>Building</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress_parcent"><span class="counter2">58</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_skill">
+                        <h3>Construction</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress_parcent"><span class="counter2">44</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_skill">
+                        <h3>Design</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress_parcent"><span class="counter2">76</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_skill">
+                        <h3>Painting</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress_parcent"><span class="counter2">64</span>%</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- End About Us Area -->
 
     <!-- What ew offer Area -->
+    <a id="services"></a>
     <section class="what_we_area row">
         <div class="container">
             <div class="tittle wow fadeInUp">
@@ -211,7 +286,7 @@
                         <img src="images/cns-1.jpg" alt="">
                     </div>
                     <div class="cns-content">
-                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
                         <a href="#">AQL INSPECTION</a>
                         <p>100% and AQL Inspection of Full shoes,Shoe uppers, Leather bags, Leather Aprons, Leather belts, Saddlery, Traveler bags, Leather Gloves, Wallets. </p>
                     </div>
@@ -263,7 +338,7 @@
             </div>
             <div class="feature_row row">
                 <div class="col-md-6 feature_img">
-                    <img src="images/feature-man.jpg" alt="">
+                    <img src="images/feature-man-2.jpg" alt="">
                 </div>
                 <div class="col-md-6 feature_content">
                     <div class="subtittle">
@@ -309,97 +384,43 @@
     </section>
     <!-- End Our Features Area -->
 
+    <!-- Our Achievments Area -->
+    <div id="achievements"></div>
+    <!-- End Our Achievments Area -->
+
     <!-- Our Services Area -->
-    <section class="our_services_area">
+    <section class="our_services_tow">
         <div class="container">
             <div class="tittle wow fadeInUp">
                 <h2>Our Services</h2>
                 <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
             </div>
-            <div class="portfolio_inner_area">
-                <div class="portfolio_filter">
+            <div class="architecture_area">
+                <div class="portfolio_filter portfolio_filter_2">
                     <ul>
-                        <li data-filter="*" class="active"><a href=""> All</a></li>
-                        <li data-filter=".photography"><a href="">ARCHITECTURE</a></li>
-                        <li data-filter=".branding"><a href="">Building</a></li>
-                        <li data-filter=".webdesign"><a href="">CONSTRUCTION</a></li>
-                        <li data-filter=".adversting"><a href="">DESIGN</a></li>
-                        <li data-filter=".painting"><a href="">Painting</a></li>
+                        <li data-filter="*" class="active"><a href=""><i class="fa fa-wrench" aria-hidden="true"></i>ARCHITECTURE</a></li>
+                        <li data-filter=".building"><a href=""><i class="fa fa-cogs" aria-hidden="true"></i>Building</a></li>
+                        <li data-filter=".webdesign"><a href=""><i class="fa fa-cog" aria-hidden="true"></i>CONSTRUCTION</a></li>
+                        <li data-filter=".adversting"><a href=""><i class="fa fa-heart" aria-hidden="true"></i>DESIGN</a></li>
+                        <li data-filter=".painting"><a href=""><i class="fa fa-paint-brush" aria-hidden="true"></i>Painting</a></li>
                     </ul>
                 </div>
-                <div class="portfolio_item">
-                    <div class="grid-sizer"></div>
-                    <div class="single_facilities col-xs-4 p0 painting photography adversting">
-                        <div class="single_facilities_inner">
-                            <img src="images/gallery/sv-1.jpg" alt="">
-                            <div class="gallery_hover">
-                                <h4>Construction</h4>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                </ul>
+                <div class="portfolio_item portfolio_2">
+                    <div class="grid-sizer-2"></div>
+                    <div class="single_facilities col-sm-7 painting building painting adversting">
+                        <div class="who_we_area">
+                            <div class="subtittle">
+                                <h2>ARCHITECTURE</h2>
                             </div>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alter-ation in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to
+                                use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrass-ing hidden in the middle of text.</p>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                                to using</p>
+                            <a href="#" class="button_all">Contact Now</a>
                         </div>
                     </div>
-                    <div class="single_facilities col-xs-4 p0 webdesign">
-                        <div class="single_facilities_inner">
-                            <img src="images/gallery/sv-2.jpg" alt="">
-                            <div class="gallery_hover">
-                                <h4>Construction</h4>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_facilities col-xs-4 painting p0 photography branding">
-                        <div class="single_facilities_inner">
-                            <img src="images/gallery/sv-3.jpg" alt="">
-                            <div class="gallery_hover">
-                                <h4>Construction</h4>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_facilities col-xs-4 p0 adversting webdesign adversting">
-                        <div class="single_facilities_inner">
-                            <img src="images/gallery/sv-4.jpg" alt="">
-                            <div class="gallery_hover">
-                                <h4>Construction</h4>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_facilities col-xs-4 p0 painting adversting branding">
-                        <div class="single_facilities_inner">
-                            <img src="images/gallery/sv-5.jpg" alt="">
-                            <div class="gallery_hover">
-                                <h4>Construction</h4>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_facilities col-xs-4 p0 webdesign photography magazine adversting">
-                        <div class="single_facilities_inner">
-                            <img src="images/gallery/sv-6.jpg" alt="">
-                            <div class="gallery_hover">
-                                <h4>Construction</h4>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="single_facilities col-sm-5 painting webdesign">
+                        <img src="images/feature-man-4.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -407,322 +428,81 @@
     </section>
     <!-- End Our Services Area -->
 
-
-
-    <!-- Our Achievments Area -->
-    <section class="our_achievments_area" data-stellar-background-ratio="0.3">
+    <!-- Our Team Area -->
+    <!-- <section class="our_team_area">
         <div class="container">
             <div class="tittle wow fadeInUp">
-                <h2>Our Strengths</h2>
-                <h4>We are proud of our strength areas ensuring 100 % sucesss</h4>
-            </div>
-            <div class="achievments_row row">
-                <div class="col-md-3 col-sm-6 p0 completed">
-                    <i class="fa fa-connectdevelop" aria-hidden="true"></i>
-                    <span class="counter">100</span>
-                    <h6>Guarenteed Satisfaction</h6>
-                </div>
-                <div class="col-md-3 col-sm-6 p0 completed">
-                    <i class="fa fa-home" aria-hidden="true"></i>
-                    <span class="counter">100</span>
-                    <h6>Technical Expertise</h6>
-                </div>
-                <div class="col-md-3 col-sm-6 p0 completed">
-                    <i class="fa fa-child" aria-hidden="true"></i>
-                    <span class="counter">100</span>
-                    <h6>Timely Feedback</h6>
-                </div>
-                <div class="col-md-3 col-sm-6 p0 completed">
-                    <i class="fa fa-trophy" aria-hidden="true"></i>
-                    <span class="counter">100</span>
-                    <h6>Passion for Leather</h6>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Our Achievments Area -->
-
-    <!-- Our Testimonial Area -->
-    <section class="testimonial_area row">
-        <div class="container">
-            <div class="tittle wow fadeInUp">
-                <h2>Our TESTIMONIALS</h2>
+                <h2>Our Team</h2>
                 <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
             </div>
-            <div class="testimonial_carosel">
-                <div class="item">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="images/testimonial-2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Emran Khan</h4>
-                            <h6>Web Developer</h6>
+            <div class="row team_row">
+                <div class="col-md-3 col-sm-6 wow fadeInUp">
+                    <div class="team_membar">
+                        <img src="images/team/tm-1.jpg" alt="">
+                        <div class="team_content">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <a href="#" class="name">Prodip Ghosh</a>
+                            <h6>Founder &amp; CEO</h6>
                         </div>
                     </div>
-                    <p><i class="fa fa-quote-right" aria-hidden="true"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                        non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio<i class="fa fa-quote-left" aria-hidden="true"></i></p>
                 </div>
-                <div class="item">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="images/testimonial-3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Emran Khan</h4>
-                            <h6>Web Developer</h6>
+                <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team_membar">
+                        <img src="images/team/tm-2.jpg" alt="">
+                        <div class="team_content">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <a href="#" class="name">Emran Khan</a>
+                            <h6>Web-Developer</h6>
                         </div>
                     </div>
-                    <p><i class="fa fa-quote-right" aria-hidden="true"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                        non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio<i class="fa fa-quote-left" aria-hidden="true"></i></p>
                 </div>
-                <div class="item">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="images/testimonial-1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Prodip ghosht</h4>
-                            <h6>Brand Manager</h6>
+                <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="team_membar">
+                        <img src="images/team/tm-3.jpg" alt="">
+                        <div class="team_content">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <a href="#" class="name">Prodip Ghosh</a>
+                            <h6>Founder &amp; CEO</h6>
                         </div>
                     </div>
-                    <p><i class="fa fa-quote-right" aria-hidden="true"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                        non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio<i class="fa fa-quote-left" aria-hidden="true"></i></p>
                 </div>
-                <div class="item">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="images/testimonial-2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Jakaria Khan</h4>
-                            <h6>Brand Manager</h6>
-                        </div>
-                    </div>
-                    <p><i class="fa fa-quote-right" aria-hidden="true"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                        non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio<i class="fa fa-quote-left" aria-hidden="true"></i></p>
-                </div>
-                <div class="item">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="images/testimonial-1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Prodip ghosht</h4>
-                            <h6>Brand Manager</h6>
+                <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="team_membar">
+                        <img src="images/team/tm-4.jpg" alt="">
+                        <div class="team_content">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <a href="#" class="name">Jakaria Khan</a>
+                            <h6>Founder &amp; CEO</h6>
                         </div>
                     </div>
-                    <p><i class="fa fa-quote-right" aria-hidden="true"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                        non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio<i class="fa fa-quote-left" aria-hidden="true"></i></p>
-                </div>
-                <div class="item">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="images/testimonial-2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Jakaria Khan</h4>
-                            <h6>Brand Manager</h6>
-                        </div>
-                    </div>
-                    <p><i class="fa fa-quote-right" aria-hidden="true"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                        non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio<i class="fa fa-quote-left" aria-hidden="true"></i></p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Our testimonial Area -->
+    </section> -->
+    <!-- End Our Team Area -->
+
+
+
 
     <!-- Our Featured Works Area -->
-    <section class="featured_works row" data-stellar-background-ratio="0.3">
-        <div class="tittle wow fadeInUp">
-            <h2>Our Featured Works</h2>
-            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
-        </div>
-        <div class="featured_gallery">
-            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
-                <img src="images/gallery/gl-1.jpg" alt="">
-                <div class="gallery_hover">
-                    <h4>Bolt Apartments</h4>
-                    <a href="#">VIEW PROJECT</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
-                <img src="images/gallery/gl-2.jpg" alt="">
-                <div class="gallery_hover">
-                    <h4>Bolt Apartments</h4>
-                    <a href="#">VIEW PROJECT</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
-                <img src="images/gallery/gl-3.jpg" alt="">
-                <div class="gallery_hover">
-                    <h4>Bolt Apartments</h4>
-                    <a href="#">VIEW PROJECT</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
-                <img src="images/gallery/gl-4.jpg" alt="">
-                <div class="gallery_hover">
-                    <h4>Bolt Apartments</h4>
-                    <a href="#">VIEW PROJECT</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
-                <img src="images/gallery/gl-5.jpg" alt="">
-                <div class="gallery_hover">
-                    <h4>Bolt Apartments</h4>
-                    <a href="#">VIEW PROJECT</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
-                <img src="images/gallery/gl-6.jpg" alt="">
-                <div class="gallery_hover">
-                    <h4>Bolt Apartments</h4>
-                    <a href="#">VIEW PROJECT</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
-                <img src="images/gallery/gl-7.jpg" alt="">
-                <div class="gallery_hover">
-                    <h4>Bolt Apartments</h4>
-                    <a href="#">VIEW PROJECT</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
-                <img src="images/gallery/gl-8.jpg" alt="">
-                <div class="gallery_hover">
-                    <h4>Bolt Apartments</h4>
-                    <a href="#">VIEW PROJECT</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- <div id="feature"></div> -->
     <!-- End Our Featured Works Area -->
-
-    <!-- Our Latest Blog Area -->
-    <section class="latest_blog_area">
-        <div class="container">
-            <div class="tittle wow fadeInUp">
-                <h2>Our Latest Blog</h2>
-                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
-            </div>
-            <div class="row latest_blog">
-                <div class="col-md-4 col-sm-6 blog_content">
-                    <img src="images/blog/lb-1.jpg" alt="">
-                    <a href="#" class="blog_heading">Our Latest Project</a>
-                    <h4><small>by  </small><a href="#">Emran Khan</a><span>/</span><small>ON </small> October 15, 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis velit in tristique. Curabitur ac urna urna. Sed sollicitudin at nisi sed accumsan... <a href="#">Read More</a></p>
-                </div>
-                <div class="col-md-4 col-sm-6 blog_content">
-                    <img src="images/blog/lb-2.jpg" alt="">
-                    <a href="#" class="blog_heading">Our Latest Project</a>
-                    <h4><small>by  </small><a href="#">Prodip Ghosh</a><span>/</span><small>ON </small> October 15, 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis velit in tristique. Curabitur ac urna urna. Sed sollicitudin at nisi sed accumsan... <a href="#">Read More</a></p>
-                </div>
-                <div class="col-md-4 col-sm-6 blog_content">
-                    <img src="images/blog/lb-3.jpg" alt="">
-                    <a href="#" class="blog_heading">Our Latest Project</a>
-                    <h4><small>by  </small><a href="#">Prodip Ghosh</a><span>/</span><small>ON </small> October 15, 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis velit in tristique. Curabitur ac urna urna. Sed sollicitudin at nisi sed accumsan... <a href="#">Read More</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Our Latest Blog Area -->
-
-    <!-- Our Partners Area -->
-    <section class="our_partners_area">
-        <div class="container">
-            <div class="tittle wow fadeInUp">
-                <h2>Our Partners</h2>
-                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
-            </div>
-            <div class="partners">
-                <div class="item"><img src="images/client_logo/client_logo-1.png" alt=""></div>
-                <div class="item"><img src="images/client_logo/client_logo-2.png" alt=""></div>
-                <div class="item"><img src="images/client_logo/client_logo-3.png" alt=""></div>
-                <div class="item"><img src="images/client_logo/client_logo-4.png" alt=""></div>
-                <div class="item"><img src="images/client_logo/client_logo-5.png" alt=""></div>
-            </div>
-        </div>
-        <div class="book_now_aera">
-            <div class="container">
-                <div class="row book_now">
-                    <div class="col-md-10 booking_text">
-                        <h4>Booking now if you need build your dream home.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="col-md-2 p0 book_bottun">
-                        <a href="#" class="button_all">book now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Our Partners Area -->
-
-    <!-- Footer Area -->
-    <footer class="footer_area">
-        <div class="container">
-            <div class="footer_row row">
-                <div class="col-md-3 col-sm-6 footer_about">
-                    <h2>ABOUT OUR COMPANY</h2>
-                    <img src="images/footer-logo.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <ul class="socail_icon">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6 footer_about quick">
-                    <h2>Quick links</h2>
-                    <ul class="quick_link">
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Building Construction</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Home Renovation</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Hardwood Flooring</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Repairing Of Roof</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Commercial Construction</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i>Concreate Transport</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6 footer_about">
-                    <h2>Twitter Feed</h2>
-                    <a href="#" class="twitter">@colorlib: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</a>
-                    <a href="#" class="twitter">@colorlib: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</a>
-                </div>
-                <div class="col-md-3 col-sm-6 footer_about">
-                    <h2>CONTACT US</h2>
-                    <address>
-                        <p>Have questions, comments or just want to say hello:</p>
-                        <ul class="my_address">
-                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>info@thethemspro.com</a></li>
-                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+880 123 456 789</a></li>
-                            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Sector # 10, Road # 05, Plot # 31, Uttara, Dhaka 1230 </span></a></li>
-                        </ul>
-                    </address>
-                </div>
-            </div>
-        </div>
-        <div class="copyright_area">
-            Copyright 2017 All rights reserved. Designed by <a href="https://colorlib.com">Colorlib.</a>
-        </div>
-    </footer>
-    <!-- End Footer Area -->
 
     <!-- jQuery JS -->
     <script src="js/jquery-1.12.0.min.js"></script>
@@ -745,6 +525,10 @@
     <script src="vendors/stellar/jquery.stellar.js"></script>
     <!-- Theme JS -->
     <script src="js/theme.js"></script>
+
+
+    <div id="footer"></div>
+
 </body>
 
 </html>
