@@ -62,6 +62,32 @@
             font-weight: bold;
             font-size: 20px;
         }
+        .service_areas_list {
+            -webkit-columns: 3;
+            columns: 3;
+            -webkit-column-gap: 24px;
+            column-gap: 24px;
+            padding-left: 20px;
+        }
+
+        .service_areas_list li {
+            -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        @media (max-width: 991px) {
+            .service_areas_list {
+                -webkit-columns: 2;
+                columns: 2;
+            }
+        }
+
+        @media (max-width: 359px) {
+            .service_areas_list {
+                -webkit-columns: 1;
+                columns: 1;
+            }
+        }
     </style>
 
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -230,7 +256,7 @@
                         <li>Email us at <a href="mailto:info@adamantinspection.com">info@adamantinspection.com</a></li>
                     </ul>
                     <p>Popular Service areas:</p>
-                    <ul>
+                    <ul class="service_areas_list">
                         <li>Chennai</li>
                         <li>Kolkata</li>
                         <li>Kanpur</li>
