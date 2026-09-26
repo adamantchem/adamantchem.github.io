@@ -1,0 +1,11 @@
+# Robots.txt for adamantinspection.com
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://adamantinspection.com/sitemap.xml
+
+# Crawl-delay (optional - be kind to the server)
+Crawl-delay: 1
