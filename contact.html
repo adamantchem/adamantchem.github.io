@@ -62,6 +62,7 @@
             font-weight: bold;
             font-size: 20px;
         }
+
         .service_areas_list {
             -webkit-columns: 3;
             columns: 3;
@@ -95,6 +96,9 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+  <link rel="stylesheet" href="css/services-navigation.css?v=balanced-contacts-v1-20261002">
+  <script src="js/services-navigation.js?v=balanced-contacts-v1-20261002" defer></script>
+  <link rel="stylesheet" href="css/site-footer.css?v=shared-footer-v1-20261002">
 </head>
 
 <body>
@@ -124,17 +128,6 @@
     <!-- Header_Area -->
     <nav class="navbar navbar-default header_aera" id="main_navbar">
         <div class="container">
-            <!-- searchForm -->
-            <div class="searchForm">
-                <form action="#" class="row m0">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                        <input type="search" name="search" class="form-control" placeholder="Type & Hit Enter">
-                        <span class="input-group-addon form_hide"><i class="fa fa-times"></i></span>
-                    </div>
-                </form>
-            </div>
-            <!-- End searchForm -->
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="col-md-2 p0">
                 <div class="navbar-header">
@@ -161,10 +154,11 @@
                         <li class="dropdown submenu">
                             <a href="#services">Services</a>
                         </li> -->
+                        <li class="services-nav-item"><div class="services-nav-row"><a class="services-link" href="index.html#services">Services</a><button class="services-nav-toggle" type="button" aria-label="Show services menu" aria-expanded="false" aria-controls="services-submenu" hidden></button></div><ul class="services-submenu" id="services-submenu"><li><a href="aql-inspection.html">AQL Sampling Inspection</a></li><li><a href="third-party-inspection.html">Third-Party Inspection</a></li><li><a href="factory-audit.html">Factory Audit</a></li><li><a href="sourcing.html">Product Sourcing</a></li><li><a href="supplier-management.html">Supplier Management</a></li><li><a href="consultancy-services.html">Quality Consultancy</a></li></ul></li>
                         <!-- <li><a href="#">Gallery</a></li> -->
 
+                        <li><a href="sourcing-products.html">Products</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#" class="nav_searchFrom"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -297,7 +291,48 @@
     <!-- End All contact Info -->
 
     <!-- Footer Area -->
-    <div id="footer"></div>
+    <!-- Shared footer: source footr.html -->
+<footer class="adamant-footer" aria-label="Site footer">
+  <div class="adamant-footer-grid">
+    <section class="adamant-footer-about" aria-labelledby="footer-about-title">
+      <h2 id="footer-about-title">About our company</h2>
+      <p>Adamant Inspection Services provides premium leather inspection, QC, and sourcing services in India.</p>
+      <ul class="adamant-footer-social" aria-label="Social profiles">
+        <li><a href="https://www.facebook.com/AdamantLeathers" aria-label="Adamant on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/adamantservices" aria-label="Adamant on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/adamant-inspection-services/" aria-label="Adamant on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://wa.me/916394188620" aria-label="Message Adamant on WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+      </ul>
+    </section>
+    <nav class="adamant-footer-links" aria-labelledby="footer-links-title">
+      <h2 id="footer-links-title">Quick links</h2>
+      <ul>
+        <li><a href="aql-inspection.html"><i class="fa fa-angle-right" aria-hidden="true"></i>AQL Inspection</a></li>
+        <li><a href="third-party-inspection.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Third-Party Inspection</a></li>
+        <li><a href="factory-audit.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Factory Audit</a></li>
+        <li><a href="sourcing.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Product Sourcing</a></li>
+        <li><a href="supplier-management.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Supplier Management</a></li>
+        <li><a href="consultancy-services.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Quality Consultancy</a></li>
+        <li><a href="sourcing-products.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Explore Products</a></li>
+        <li><a href="contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us</a></li>
+      </ul>
+    </nav>
+    <section class="adamant-footer-contact" aria-labelledby="footer-contact-title">
+      <h2 id="footer-contact-title">Contact us</h2>
+      <p>Tell us what you need inspected or sourced from India.</p>
+      <address>
+        <ul>
+          <li><a href="mailto:info@adamantinspection.com"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>info@adamantinspection.com</span></a></li>
+          <li><a href="tel:+916394188620"><i class="fa fa-phone" aria-hidden="true"></i><span>+91 6394188620</span></a></li>
+          <li><a href="https://wa.me/916394188620"><i class="fa fa-whatsapp" aria-hidden="true"></i><span>Chat with us on WhatsApp</span></a></li>
+          <li class="adamant-footer-address"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Jajmau, Kanpur, Uttar Pradesh, India 208010</span></li>
+        </ul>
+      </address>
+    </section>
+  </div>
+  <div class="adamant-footer-base"><p>© Adamant Inspection Services</p><a href="index.html#services">All services</a></div>
+</footer>
+<!-- End shared footer -->
     <!-- End Footer Area -->
 
     <!-- jQuery JS -->
@@ -328,7 +363,7 @@
     <script>
         $(function() {
             $("#blog").load("blog.html");
-            $("#footer").load("footr.html");
+
             $("#feature").load("feature.html");
             $("#achievements").load("achievements.html");
             $("#aboutus").load("aboutus.html");
