@@ -1,0 +1,9 @@
+.sourcing-collection-preview{margin-top:48px;border-top:1px solid #dce0e3;padding-top:34px}
+.sourcing-collection-preview>p:not(.eyebrow){max-width:880px;color:#555}
+.sourcing-preview-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:24px 0}
+.sourcing-preview-grid a{display:block;text-decoration:none;color:#222;font-weight:700;font-size:15px;line-height:1.5}
+.sourcing-preview-grid img{display:block;width:100%;height:auto;aspect-ratio:1.28;object-fit:cover;margin-bottom:12px}
+.sourcing-preview-grid a:hover span{text-decoration:underline}
+.sourcing-collection-preview .section-note{font-size:13px;margin-bottom:22px}
+@media(max-width:800px){.sourcing-preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.sourcing-preview-grid{gap:20px 12px}.sourcing-preview-grid a{font-size:14px}.sourcing-collection-preview .button{width:100%}}

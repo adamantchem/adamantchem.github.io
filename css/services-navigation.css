@@ -1,0 +1,37 @@
+/* Private preview: both modern service headers and the legacy homepage/contact
+   navbar use this disclosure. Legacy selectors are intentional and tested. */
+.services-nav-item{position:relative}
+.services-nav-row{display:flex;align-items:center;gap:4px}
+.services-nav-toggle{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:44px;height:44px;padding:0;border:0;background:transparent;color:#222;cursor:pointer;touch-action:manipulation}
+.services-nav-toggle:after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.services-nav-toggle[aria-expanded="true"]:after{transform:translateY(2px) rotate(225deg)}
+.services-nav-toggle:hover{background:#f6b60b}
+.services-nav-toggle:focus-visible,.services-submenu a:focus-visible{outline:3px solid #805700;outline-offset:-3px}
+.services-nav-item [hidden]{display:none!important}
+.services-submenu{list-style:none;margin:0;padding:8px 0;border-top:3px solid #f6b60b;background:#fff;box-shadow:0 10px 25px rgba(17,31,41,.18);z-index:1001}
+.services-nav-ready .services-submenu{position:absolute;top:100%;right:0;width:292px;max-width:calc(100vw - 36px)}
+.services-submenu li{display:block;float:none;margin:0;padding:0}
+.header-nav .services-submenu a,.header_aera .navbar-collapse .navbar-nav.navbar-right .services-submenu li a{display:block;margin:0;padding:13px 20px;min-height:44px;font:500 14px/1.45 Roboto,Arial,sans-serif;text-transform:none;text-decoration:none;color:#222;border:0;white-space:normal}
+.header-nav .services-submenu a:hover,.header-nav .services-submenu a:focus,.header_aera .navbar-collapse .navbar-nav.navbar-right .services-submenu li a:hover,.header_aera .navbar-collapse .navbar-nav.navbar-right .services-submenu li a:focus{background:#111f29;color:#fff}
+.header-nav .services-nav-row .services-link{white-space:nowrap}
+.header-nav>a[aria-current="page"]{border-bottom:3px solid #f6b60b}
+.header_aera .navbar-collapse .navbar-nav.navbar-right .services-nav-row>a{display:block}
+@media(max-width:767px){
+  .header_aera .services-nav-row{justify-content:space-between}
+  .header_aera .services-nav-toggle{margin-right:8px}
+  .header_aera .services-nav-ready .services-submenu{position:static;width:100%;max-width:none;margin:0 0 12px;box-shadow:none;background:#f5f5f5}
+  .header_aera .navbar-collapse .navbar-nav.navbar-right .services-submenu li a{padding-left:26px}
+}
+@media(max-width:600px){
+  .header-nav{display:grid;grid-template-columns:auto auto auto auto auto;align-items:center;gap:0;justify-content:space-between}
+  .header-nav .services-nav-item{display:contents}
+  .header-nav .services-nav-row{gap:0}
+  .header-nav .services-nav-ready .services-submenu,.header-nav .services-submenu{position:static;grid-column:1/-1;order:1;width:100%;max-width:none;margin:12px 0 0;box-shadow:none;border:1px solid #dce0e3;border-top:3px solid #f6b60b;background:#f5f5f5}
+  .header-nav .services-nav-toggle{width:44px}
+  .header-nav .services-submenu a{padding:13px 16px;font-size:14px}
+}
+@media(max-width:360px){
+  .header-nav{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:2px}
+  .header-nav>a,.header-nav .services-nav-row{grid-column:span 2;justify-content:center}
+  .header-nav>.products-link,.header-nav>a:last-child{grid-column:span 3}
+}

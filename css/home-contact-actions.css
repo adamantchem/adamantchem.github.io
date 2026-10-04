@@ -1,0 +1,45 @@
+/* Homepage only: keep both enquiry channels visible outside the mobile menu. */
+/* Stay in document flow when Bootstrap changes affix classes during scrolling. */
+.home-contact-header,.home-contact-header.affix,.home-contact-header.affix-top,.home-contact-header.affix-bottom{position:sticky;top:0!important}
+/* Keep linked section headings clear of the actual sticky header height. */
+#about,#services{scroll-margin-top:calc(var(--home-header-offset,100px) + 16px)}
+.home-contact-header > .container{display:grid;grid-template-columns:160px minmax(0,1fr) auto;align-items:center;gap:20px;min-height:100px}
+.home-contact-header > .container:before,.home-contact-header > .container:after{display:none}
+.home-contact-header .home-brand-column,.home-contact-header .home-nav-column{float:none;width:auto;min-width:0}
+.home-contact-header .navbar-header{float:none}
+.home-contact-header .navbar-header:before,.home-contact-header .navbar-header:after{display:none}
+.home-contact-header .navbar-header .navbar-brand{display:flex;align-items:center;float:none;padding:0;margin:0;height:80px}
+.home-contact-header .navbar-brand img{width:160px;max-height:66px;object-fit:contain}
+.home-contact-header .navbar-collapse{padding:0}
+.home-contact-header .navbar-collapse .navbar-nav.navbar-right{display:flex;align-items:center;justify-content:flex-end;float:none!important;margin:0}
+.home-contact-header .navbar-collapse .navbar-nav.navbar-right > li > a,.home-contact-header .navbar-collapse .navbar-nav.navbar-right .services-nav-row > a{padding-left:20px}
+.home-contact-header .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom{width:44px;margin-left:20px}
+.home-contact-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px}
+.home-contact-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;padding:10px 12px;border:2px solid #f6b60b;color:#222;text-decoration:none;font:700 13px/1.4 Roboto,Arial,sans-serif;white-space:nowrap}
+.home-contact-link:hover,.home-contact-link:focus{background:#f6b60b;color:#111;text-decoration:none}
+.home-contact-link:focus-visible{outline:3px solid #805700;outline-offset:3px}
+.home-contact-link i{font-size:17px}
+@media(min-width:768px) and (max-width:1199px){
+  .home-contact-header > .container{grid-template-columns:160px minmax(0,1fr);gap:0 20px;padding-top:8px;padding-bottom:8px}
+  .home-contact-header .home-nav-column{grid-column:1/-1;grid-row:2}
+  .home-contact-actions{grid-column:2;grid-row:1}
+  .home-contact-header .navbar-collapse .navbar-nav.navbar-right{justify-content:flex-start}
+  .home-contact-header .navbar-collapse .navbar-nav.navbar-right > li > a,.home-contact-header .navbar-collapse .navbar-nav.navbar-right .services-nav-row > a{line-height:44px}
+  .home-contact-header .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom{height:44px;margin-top:0}
+}
+@media(max-width:767px){
+  #about,#services{scroll-margin-top:calc(var(--home-header-offset,127px) + 16px)}
+  .home-contact-header > .container{grid-template-columns:minmax(0,1fr);gap:0;padding-top:8px;padding-bottom:8px;min-height:0}
+  .home-contact-header .home-brand-column{grid-row:1}
+  .home-contact-header .navbar-header{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px;margin:0}
+  .home-contact-header .navbar-header .navbar-brand{order:-1;height:60px;padding:0}
+  .home-contact-header .navbar-brand img{width:145px;max-height:55px}
+  .home-contact-header .navbar-toggle{top:0;margin:0;min-width:44px;min-height:44px}
+  .home-contact-actions{grid-row:2;justify-content:stretch;gap:8px;padding-top:6px}
+  .home-contact-link{flex:1;padding:9px 12px}
+  .home-contact-header .home-nav-column{grid-row:3}
+  .home-contact-header .navbar-collapse{max-height:calc(100vh - 140px);max-height:calc(100dvh - 140px);overflow-y:auto;overscroll-behavior:contain;border-top:0;box-shadow:none}
+  .home-contact-header .navbar-collapse .navbar-nav.navbar-right{display:block;margin:10px 0 0}
+  .home-contact-header .navbar-collapse .navbar-nav.navbar-right > li > a,.home-contact-header .navbar-collapse .navbar-nav.navbar-right .services-nav-row > a{padding-left:12px;line-height:44px}
+  .home-contact-header .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom{width:44px;height:44px;margin:0 0 0 12px}
+}
