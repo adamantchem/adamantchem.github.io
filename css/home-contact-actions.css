@@ -1,6 +1,8 @@
 /* Homepage only: keep both enquiry channels visible outside the mobile menu. */
 /* Stay in document flow when Bootstrap changes affix classes during scrolling. */
 .home-contact-header,.home-contact-header.affix,.home-contact-header.affix-top,.home-contact-header.affix-bottom{position:sticky;top:0!important}
+/* Keep linked section headings clear of the actual sticky header height. */
+#about,#services{scroll-margin-top:calc(var(--home-header-offset,100px) + 16px)}
 .home-contact-header > .container{display:grid;grid-template-columns:160px minmax(0,1fr) auto;align-items:center;gap:20px;min-height:100px}
 .home-contact-header > .container:before,.home-contact-header > .container:after{display:none}
 .home-contact-header .home-brand-column,.home-contact-header .home-nav-column{float:none;width:auto;min-width:0}
@@ -26,6 +28,7 @@
   .home-contact-header .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom{height:44px;margin-top:0}
 }
 @media(max-width:767px){
+  #about,#services{scroll-margin-top:calc(var(--home-header-offset,127px) + 16px)}
   .home-contact-header > .container{grid-template-columns:minmax(0,1fr);gap:0;padding-top:8px;padding-bottom:8px;min-height:0}
   .home-contact-header .home-brand-column{grid-row:1}
   .home-contact-header .navbar-header{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px;margin:0}

@@ -3,11 +3,13 @@
   'use strict';
   var root = document.documentElement;
   var header = document.querySelector('.site-header');
+  var homeHeader = document.querySelector('.home-contact-header');
   function setPixels(name, value) {
     var pixels = Math.ceil(value) + 'px';
     if (root.style.getPropertyValue(name) !== pixels) root.style.setProperty(name, pixels);
   }
   function syncHeader() {
+    if (homeHeader) setPixels('--home-header-offset', homeHeader.getBoundingClientRect().height);
     if (!header) return; // Do not alter the legacy homepage/contact affix behavior.
     var bounds = header.getBoundingClientRect();
     var list = header.querySelector('.services-submenu');
@@ -76,6 +78,7 @@
   });
   syncHeader();
   if (header && typeof ResizeObserver !== 'undefined') new ResizeObserver(syncHeader).observe(header);
+  if (homeHeader && typeof ResizeObserver !== 'undefined') new ResizeObserver(syncHeader).observe(homeHeader);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncHeader);
   window.addEventListener('load', syncHeader);
 }());
